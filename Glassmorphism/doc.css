@@ -1,0 +1,107 @@
+/* MArgin reset  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+body{
+    /* overflow: hidden; */
+    /* background-color: #ff0383; */
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url('bgs.jpg') no-repeat center center/cover;
+
+}
+
+.content{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    /* border: 2px solid rgba(0,0,0,0.2); */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    /* box-shadow: ; */
+    /* z-index: 10; */
+    margin: 20px 20px ;
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 100%;
+    /* pointer-events: none; */
+}
+
+.cont{
+    /* z-index: 0; */
+    position: absolute;
+    top: 0%;
+    border-radius: 20px;
+    left: -100%;
+    color: white;
+    font-size: 14px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 0px 10px; */
+    /* padding: 20px; */
+    border: 2px solid rgba(255,255,255,0.5);
+    /* border-right: none; */
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    transition: left 0.5s linear;
+    /* pointer-events: none; */
+    
+}
+
+.cont a:hover{
+    transform: scale(1.2);
+}
+.cont a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    transition: all 0.2s;
+    background-color: #ff0383;
+}
+.content h2{
+    margin-bottom: 10px;
+}
+.content:hover .cont{
+    left: 0%;
+}
+
+.content:nth-child(1){
+    /* background-color: yellowgreen; */
+    background: url('bg.jpg') center center/cover;
+
+}
+.content:nth-child(2){
+    /* background-color: blueviolet; */
+    background: url('bg.jpg') center center/cover;
+
+}
+.content:nth-child(3){
+    /* background-color: #ff3083; */
+    background: url('bg.jpg') center center/cover;
+
+}
